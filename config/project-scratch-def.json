@@ -1,13 +1,19 @@
 {
-  "orgName": "jonathan.zhou company",
+  "orgName": "Einstein Data Detect Demo",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "hasSampleData": true,
+  "features": ["PlatformEncryption", "AdditionalFieldHistory:40", "FieldAuditTrail", "EnableSetPasswordInApi", "EventLogFile", "SecurityEventEnabled"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "eventSettings": {
+      "enableDeleteMonitoringData": true,
+      "enableTransactionSecurityPolicies": true,
+      "enableEventLogWaveIntegration": true
     }
   }
 }
