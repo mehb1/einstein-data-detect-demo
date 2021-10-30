@@ -9,11 +9,6 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
-    },
-    "eventSettings": {
-      "enableDeleteMonitoringData": true,
-      "enableTransactionSecurityPolicies": true,
-      "enableEventLogWaveIntegration": true
     }
   }
 }
