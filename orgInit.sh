@@ -10,8 +10,8 @@ sfdx force:source:push
 # Set the default password.
 sfdx shane:user:password:set -g User -l User -p salesforce1
 
-# Open the org.
-sfdx force:org:open
-
 # Import the data required by the demo
 sfdx automig:load --inputdir ./data
+
+# Open the org.
+sfdx force:org:open -p /lightning/n/datadetect__Home
