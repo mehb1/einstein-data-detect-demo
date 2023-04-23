@@ -1,7 +1,8 @@
 {
-  "orgName": "Einstein Data Detect Demo",
+  "orgName": "Data Detect Demo",
   "edition": "Developer",
   "hasSampleData": true,
+  "adminEmail": "datadetect@example.com",
   "features": ["PlatformEncryption", "AdditionalFieldHistory:40", "FieldAuditTrail", "EnableSetPasswordInApi", "EventLogFile", "SecurityEventEnabled"],
   "settings": {
     "lightningExperienceSettings": {
