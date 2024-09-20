@@ -2,7 +2,7 @@
 sfdx shane:org:create -f config/project-scratch-def.json -d 5 -s --wait 60 --userprefix data -o detect.demo
 
 # Install Einstein Data Detect
-sfdx force:package:install -w 20 -r -p 04t5e000000zR3E
+sfdx force:package:install -w 20 -r -p 04t5e000000aVeP
 
 # Push the metadata into the new scratch org.
 sfdx force:source:push
