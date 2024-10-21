@@ -1,17 +1,17 @@
 # Create the demo org
-sfdx shane:org:create -f config/project-scratch-def.json -d 5 -s --wait 60 --userprefix data -o detect.demo
+sf demoutil org create scratch -f config/project-scratch-def.json -d 5 -s -p data -e detect.demo
 
 # Install Einstein Data Detect
-sfdx force:package:install -w 20 -r -p 04t5e000000aVeP
+sf package install -w 20 -r -p 04t5e000000aVeP
 
 # Push the metadata into the new scratch org.
-sfdx force:source:push
+sf project deploy start
 
 # Set the default password.
-sfdx shane:user:password:set -g User -l User -p salesforce1
+sf demoutil user password set -p salesforce1 -g User -l User
 
 # Import the data required by the demo
-sfdx automig:load --inputdir ./data
+sf automig load --inputdir ./data
 
 # Open the org.
-sfdx force:org:open -p /lightning/n/datadetect__Home
+sf org open -p /lightning/n/datadetect__Home
